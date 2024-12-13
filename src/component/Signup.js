@@ -20,6 +20,7 @@ function Signup() {
     <div className="container">
       <h2>Signup</h2>
       <form onSubmit={handleSubmit}>
+        <div style={{margin:"10px 0 0 0 "}}>
         <input
           type="email"
           placeholder="Enter your email"
@@ -27,6 +28,8 @@ function Signup() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        </div>
+        <div style={{ margin:"10px 0 0 0"}}>
         <input
           type="password"
           placeholder="Enter your password"
@@ -34,6 +37,8 @@ function Signup() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        </div>
+        <div style={{margin:"10px 0 0 0"}}>
         <input
           type="password"
           placeholder="Confirm your password"
@@ -41,10 +46,11 @@ function Signup() {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-        <button type="submit">Sign Up</button>
+        </div>
+        <button type="submit" style={{margin:"10px 0 0 0 "}}>Sign Up</button>
       </form>
       <p>
-        Already have an account? <Link to="/login">Log in here</Link>
+        Already have an account? <Link to="/">Log in here</Link>
       </p>
     </div>
   );

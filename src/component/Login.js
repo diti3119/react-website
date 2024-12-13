@@ -11,9 +11,10 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="login-container" style={{backgroundColor:"skyblue", height:"220px", padding:"30px", borderRadius:"20px"}}>
+      <h2 style={{textAlign:"center"}}>Login</h2>
+      <form onSubmit={handleSubmit} >
+        <div style={{margin:"10px 0 0 0"}}>
         <input
           type="email"
           placeholder="Email"
@@ -21,6 +22,8 @@ function Login() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        </div>
+        <div style={{margin:"10px 0 0 0"}}>
         <input
           type="password"
           placeholder="Password"
@@ -28,7 +31,9 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        </div>
+        
+        <button type="submit" style={{margin:"10px 0 0 0",}}>Login</button>
       </form>
     </div>
   );
