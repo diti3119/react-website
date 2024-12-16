@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./component/Login";  
 import Signup from "./component/Signup";
-import ProfilePage from "./component/profilePage";
-import PersonalInfo from "./component/PersonalInfo";
+import ProfilePage from "src/component/profilePage";
+import PersonalInfo from "src/component/PersonalInfo";
 
 
 
