@@ -2,7 +2,7 @@ import React from "react";
 
 function Education({ education, onChange, editing, onSave, onEdit }) {
   return (
-    <div className="education">
+    <div className="education" style={{width:"200px"}}>
       <h2>Education</h2>
       {editing ? (
         education.map((edu, index) => (

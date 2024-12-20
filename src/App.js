@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./component/Login";  
-import Signup from "./component/Signup";
-import ProfilePage from "src/component/profilePage";
-import PersonalInfo from "src/component/PersonalInfo";
 
+import Login from "./component/Login";  
+import Signup from "./component/Signup";    
+import ProfilePage from "./component/ProfilePage";
+import PersonalInfo from "./component/PersonalInfo";
+import Education from "./component/Education";
 
 
 
@@ -18,9 +19,8 @@ function App() {
         <Route path="/" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
         <Route  path="/personalInfo" element={<personalInfo/>}/>
-        <Route  path="/profilePage" element={<profilePage/>}/>
+        <Route  path="/profilePage" element={<ProfilePage/>}/>
       </Routes>
-       
     </Router>
     
   );

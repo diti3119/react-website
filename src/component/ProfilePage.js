@@ -23,8 +23,8 @@ function ProfilePage() {
   const [editingEducation, setEditingEducation] = useState(false);
 
   useEffect(() => {
-    const savedPersonalInfo = parse(localStorage.getItem("personal_info"));
-    const savedEducation = parse(localStorage.getItem("education"));
+    const savedPersonalInfo = JSON.parse(localStorage.getItem("personal_info"));
+    const savedEducation = JSON.parse(localStorage.getItem("education"));
 
     if (savedPersonalInfo) setPersonalInfo(savedPersonalInfo);
     if (savedEducation) setEducation(savedEducation);
