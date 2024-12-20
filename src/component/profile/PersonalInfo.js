@@ -2,7 +2,7 @@ import React from "react";
 
 function PersonalInfo({ personalInfo, onChange, editing, onSave, onEdit }) {
   return (
-    <div className="personal-info" style={{border:"2px solid black", padding:"60px",width:"300px"}}>
+    <div className="personal-info" style={{border:"2px solid black", padding:"30px",width:"300px", height:"300px"}}>
       <form>
       <h2>Personal Info</h2>
       {editing ? (
