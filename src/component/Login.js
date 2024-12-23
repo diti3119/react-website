@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "../component/style.css";
 
 function Login() {
@@ -11,7 +11,7 @@ function Login() {
   };
 
   return (
-    <div className="login-container" style={{backgroundColor:"skyblue", height:"20px", padding:"30px", borderRadius:"20px"}}>
+    <div className="login-container" style={{backgroundColor:"skyblue", height:"200px", padding:"30px", borderRadius:"20px"}}>
       <h2 style={{textAlign:"center"}}>Login</h2>
       <form onSubmit={handleSubmit} >
         <div style={{margin:"10px 0 0 0"}}>
@@ -39,4 +39,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login; 

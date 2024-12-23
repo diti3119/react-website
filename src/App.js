@@ -1,11 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Login from "./auth/Login";  
-import Signup from "./auth/Signup";    
-import ProfilePage from "./profile/ProfilePage";
-import PersonalInfo from "./profile/PersonalInfo";
-import Education from "./profile/Education";
+
+import Login from './component/Login';
+import Signup from './component/Signup';
+import ProfilePage from "./component/ProfilePage";
+import PersonalInfo from './component/PersonalInfo';
+import Education from './component/Education';
+
+
 
 
 
@@ -18,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
-        <Route  path="/personalInfo" element={<personalInfo/>}/>
         <Route  path="/profilePage" element={<ProfilePage/>}/>
+        <Route  path="/personalInfo" element={<PersonalInfo/>}/>
       </Routes>
     </Router>
     
@@ -27,3 +30,4 @@ function App() {
 }
 
 export default App;
+

@@ -14,7 +14,7 @@ function Signup() {
       return;
     }
     console.log("Signup Details:", { email, password });
-  };
+  }; 
 
   return (
     <div className="container">
