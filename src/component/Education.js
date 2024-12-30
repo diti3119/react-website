@@ -1,5 +1,5 @@
 import React from "react";
-
+// import Education from "./Education";
 
 function Education({ education, onChange, editing, onSave, onEdit }) {
   return (
@@ -41,8 +41,21 @@ function Education({ education, onChange, editing, onSave, onEdit }) {
           </div>
         ))
       )}
-      <button onClick={onEdit}style={{backgroundColor:"skyblue", padding:"10px", width:"100px"}}>Edit</button>
-      {editing && <button onClick={onSave}style={{backgroundColor:"green", padding:"10px", width:"100px"}}>Save</button>}
+      <button onClick={onEdit} style={{
+                backgroundColor: "skyblue",
+                color: "white",
+                padding: "10px",
+                width: "100px",
+                border: "none",
+                borderRadius: "5px",}}>Edit</button>
+      {editing && <button onClick={onSave}
+      style={{
+                backgroundColor: "green",
+                color: "white",
+                padding: "10px",
+                width: "100px",
+                border: "none",
+                borderRadius: "5px",}}>Save</button>}
     </div>
   );
 }

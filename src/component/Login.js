@@ -12,7 +12,7 @@ function Login() {
 
   return (
     <div className="login-container" style={{backgroundColor:"skyblue", height:"200px", padding:"30px", borderRadius:"20px"}}>
-      <h2 style={{textAlign:"center"}}>Login</h2>
+      <h2 style={{textAlign:"center" ,color:"white",fontSize:"30px"}}>Login</h2>
       <form onSubmit={handleSubmit} >
         <div style={{margin:"10px 0 0 0"}}>
         <input
@@ -33,7 +33,7 @@ function Login() {
         />
         </div>
         
-        <button type="submit" style={{margin:"10px 0 0 0",}}>Login</button>
+        <button type="submit" style={{margin:"10px 0 0 0",padding:"5px", borderRadius:"5px", width:"50px",backgroundColor:"white", color:"black", fontSize:"15px"}}>Login</button>
       </form>
     </div>
   );

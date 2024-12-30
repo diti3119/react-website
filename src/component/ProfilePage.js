@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PersonalInfo from "./PersonalInfo";
 import Education from "./Education";
 
+
 function ProfilePage() {
   const [personalInfo, setPersonalInfo] = useState({
     firstName: "",
@@ -49,6 +50,7 @@ function ProfilePage() {
     localStorage.setItem("education", JSON.stringify(education));
     setEditingEducation(false);
   };
+  
 
   return (
     <div className="profile-page">
