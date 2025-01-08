@@ -1,186 +1,6 @@
-
-
-
-
-// import React, { useState } from "react";
-
-// // PersonalInfo Component
-// function PersonalInfo() {
-//   const [personalInfo, setPersonalInfo] = useState({
-//     firstName: "",
-//     lastName: "",
-//     email: "",
-//     contact: "",
-//     password: "",
-//   });
-
-//   const [editing, setEditing] = useState(false);
-//   const [profilePic, setProfilePic] = useState(null);
-
-//   // Function to handle the save operation
-//   const handleSave = () => {
-//     setEditing(false);
-//     alert("Changes saved!");
-//   };
-
-//   // Function to handle the edit operation
-//   const handleEdit = () => {
-//     setEditing(true);
-//   };
-
-//   // Function to handle the change in form fields
-//   const handleChange = (field, value) => {
-//     setPersonalInfo((prev) => ({
-//       ...prev,
-//       [field]: value,
-//     }));
-//   };
-
-//   return (
-//     <div style={{ textAlign: "center", marginTop: "50px" }}>
-     
-
-//       <div
-//         className="personal-info"
-//         style={{
-//           border: "2px solid black",
-//           padding: "15px",
-//           width: "350px",
-//           height: "500px",
-//           borderRadius: "10px",
-//         }}
-//       >
-//         <h2 style={{ color: "black" }}>Personal Info</h2>
-
-//         {/* Profile Picture Section */}
-//         <div style={{ textAlign: "center", marginBottom: "20px" }}>
-//           <div
-//             style={{
-//               width: "100px",
-//               height: "100px",
-//               padding: "20px",
-//               overflow: "hidden",
-//               border: "2px solid skyblue",
-//               margin: "auto",
-//             }}
-//           >
-//             {profilePic ? (
-//               <img
-//                 src={profilePic}
-//                 alt="Profile"
-//                 style={{ width: "100%", height: "100%", objectFit: "cover"}}
-//               />
-//             ) : (
-//               <p style={{ lineHeight: "100px", color: "skyblue", borderRadius:"50%" }}>No Image</p>
-//             )}
-//           </div>
-
-//           {/* Profile Picture Upload */}
-//           {editing && (
-//             <input
-//               type="file"
-//               accept="image/*"
-//               onChange={(e) => {
-//                 const file = e.target.files[0];
-//                 if (file) {
-//                   const reader = new FileReader();
-//                   reader.onload = () => setProfilePic(reader.result);
-//                   reader.readAsDataURL(file);
-//                 }
-//               }}
-//               style={{ marginTop: "10px" }}
-//             />
-//           )}
-//         </div>
-
-//         {/* Form Fields */}
-//         {editing ? (
-//           <div>
-//             <label style={{ padding: "10px" }}>First Name:</label>
-//             <input
-//               type="text"
-//               value={personalInfo.firstName || ""}
-//               onChange={(e) => handleChange("firstName", e.target.value)}
-//               style={{ padding: "5px" }}
-//             />
-//             <br />
-//             <label style={{ padding: "10px" }}>Last Name:</label>
-//             <input
-//               type="text"
-//               value={personalInfo.lastName || ""}
-//               onChange={(e) => handleChange("lastName", e.target.value)}
-//               style={{ padding: "5px" }}
-//             />
-//             <br />
-//             <label style={{ padding: "10px" }}>Email:</label>
-//             <input
-//               type="email"
-//               value={personalInfo.email || ""}
-//               onChange={(e) => handleChange("email", e.target.value)}
-//               style={{ padding: "5px" }}
-//             />
-//             <br />
-//             <label style={{ padding: "10px" }}>Contact:</label>
-//             <input
-//               type="text"
-//               value={personalInfo.contact || ""}
-//               onChange={(e) => handleChange("contact", e.target.value)}
-//               style={{ padding: "5px" }}
-//             />
-//             <br />
-//             <label style={{ padding: "10px" }}>Password:</label>
-//             <input
-//               type="password"
-//               value={personalInfo.password || ""}
-//               onChange={(e) => handleChange("password", e.target.value)}
-//               style={{ padding: "5px" }}
-//             />
-//             <br />
-//             <br />
-//             <button
-//               onClick={handleSave}
-//               style={{
-//                 backgroundColor: "green",
-//                 color: "white",
-//                 padding: "10px",
-//                 width: "100px",
-//                 border: "none",
-//                 borderRadius: "5px",
-//               }}
-//             >
-//               Save
-//             </button>
-//           </div>
-//         ) : (
-//           <div>
-//             <p>First Name: {personalInfo.firstName }</p>
-//             <p>Last Name: {personalInfo.lastName }</p>
-//             <p>Email: {personalInfo.email }</p>
-//             <p>Contact: {personalInfo.contact }</p>
-//             <p>Password: {personalInfo.password   }</p>
-//             <button
-//               onClick={handleEdit}
-//               style={{
-//                 backgroundColor: "skyblue",
-//                 color: "white",
-//                 padding: "10px",
-//                 width: "100px",
-//                 border: "none",
-//                 borderRadius: "5px",
-//               }}
-//             >
-//               Edit
-//             </button>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default PersonalInfo;
-
 import React, { useState } from "react";
+
+
 
 // PersonalInfo Component
 function PersonalInfo() {
@@ -226,10 +46,11 @@ function PersonalInfo() {
         className="personal-info"
         style={{
           border: "2px solid black",
-          padding: "15px",
-          width: "350px",
+          padding: "px",
+          width: "550px",
           height: "690x",
           borderRadius: "10px",
+          objectFit:"contain"
         }}
       >
         <h2 style={{ color: "black" }}>Personal Info</h2>
@@ -240,7 +61,7 @@ function PersonalInfo() {
             style={{
               width: "100px",
               height: "100px",
-              padding: "20px",
+              padding: "10px",
               overflow: "hidden",
               border: "2px solid skyblue",
               margin: "auto",
@@ -250,10 +71,10 @@ function PersonalInfo() {
               <img
                 src={profilePic}
                 alt="Profile"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{ width: "100%", height: "70px", objectFit: "cover" }}
               />
             ) : (
-              <p style={{ lineHeight: "100px", color: "skyblue" }}>No Image</p>
+              <p style={{  color: "skyblue"}}></p>
             )}
           </div>
 
@@ -277,7 +98,7 @@ function PersonalInfo() {
 
         {/* Form Fields */}
         {editing ? (
-          <div>
+          <div> 
             <label style={{ padding: "10px" }}>First Name:</label>
             <input
               type="text"
@@ -362,8 +183,8 @@ function PersonalInfo() {
               style={{ padding: "5px" }}
             />
             <br />
-            
-            <br />
+             <br />
+             
             <button
               onClick={handleSave}
               style={{
@@ -410,4 +231,5 @@ function PersonalInfo() {
 }
 
 export default PersonalInfo;
+
 

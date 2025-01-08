@@ -1,9 +1,9 @@
 import React from "react";
-// import Education from "./Education";
+
 
 function Education({ education, onChange, editing, onSave, onEdit }) {
   return (
-    <div className="education" style={{border:"2px solid black", padding:"40px", width:"200px", height:"250px", borderRadius:"10px" }}>
+    <div className="education" style={{border:"2px solid black", padding:"20px", width:"200px", height:"230px", borderRadius:"10px" }}>
       <h2>Education</h2>
       {editing ? (
         education.map((edu, index) => (
@@ -61,4 +61,5 @@ function Education({ education, onChange, editing, onSave, onEdit }) {
 }
 
 export default Education;
+
 

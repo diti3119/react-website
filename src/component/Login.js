@@ -11,7 +11,7 @@ function Login() {
   };
 
   return (
-    <div className="login-container" style={{backgroundColor:"skyblue", height:"200px", padding:"30px", borderRadius:"20px"}}>
+    <div className="login-container" style={{backgroundColor:"skyblue", height:"250px", padding:"30px", borderRadius:"20px"}}>
       <h2 style={{textAlign:"center" ,color:"white",fontSize:"30px"}}>Login</h2>
       <form onSubmit={handleSubmit} >
         <div style={{margin:"10px 0 0 0"}}>
